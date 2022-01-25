@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/gdsc-portfolio/static/css/main.cd58f987.css",
+    "main.js": "/gdsc-portfolio/static/js/main.2944fe12.js",
+    "static/js/787.1bf8793c.chunk.js": "/gdsc-portfolio/static/js/787.1bf8793c.chunk.js",
+    "static/media/dev.png": "/gdsc-portfolio/static/media/dev.34576bebc8ee266294ce.png",
+    "index.html": "/gdsc-portfolio/index.html",
+    "main.cd58f987.css.map": "/gdsc-portfolio/static/css/main.cd58f987.css.map",
+    "main.2944fe12.js.map": "/gdsc-portfolio/static/js/main.2944fe12.js.map",
+    "787.1bf8793c.chunk.js.map": "/gdsc-portfolio/static/js/787.1bf8793c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd58f987.css",
+    "static/js/main.2944fe12.js"
+  ]
+}
