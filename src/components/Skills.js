@@ -3,52 +3,61 @@ import { Container, Col, Row } from 'react-bootstrap';
 import tick from '../img/ticks.png';
 import './skills.css';
 
+const SkillCard = (props) => {
+    return (
+        <div className='skill' style={{
+            width: "90%"
+        }}>
+            <img src={tick} alt="Proficient in " className='tick' />
+            <p style={{ display: "inline-block", margin: "2%" }} className='fs-4 font-monospace'>{props.children}</p>
+        </div>
+    );
+}
+
 const Skills = () => {
-    return(
-        <Container fluid id="skills" style={{padding: "20px"}}>
-            <h1 style={{width: "100%", textAlign: "center", marginBottom: "50px", marginTop: "20px"}}>Skills</h1>
-            <Row style={{justifyContent: "center", alignItems: "center", height: "100%"}}>
-                <Col sm={12} md={6} lg={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                    <div className='skill'>
-                        <img src={tick} alt="Proficient in " className='tick'/>
-                        <h4 style={{display: 'inline-block', fontWeight: '300', margin: '0 10px'}}>Quantum Computing</h4>
-                    </div>
-                </Col>
-                <Col sm={12} md={6} lg={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                    <div className='skill'>
-                        <img src={tick} alt="Proficient in " className='tick'/>
-                        <h4 style={{display: 'inline-block', fontWeight: '300', margin: '0 10px'}}>Web Development</h4>
-                    </div>
-                </Col>
-            </Row>
-            <Row>
-                <Col sm={12} md={6} lg={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                    <div className='skill'>
-                        <img src={tick} alt="Proficient in " className='tick'/>
-                        <h4 style={{display: 'inline-block', fontWeight: '300', margin: '0 10px'}}>Data Science</h4>
-                    </div>
-                </Col>
-                <Col sm={12} md={6} lg={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                    <div className='skill'>
-                        <img src={tick} alt="Proficient in " className='tick'/>
-                        <h4 style={{display: 'inline-block', fontWeight: '300', margin: '0 10px'}}>Machine Learning</h4>
-                    </div>
-                </Col>
-            </Row>
-            <Row>
-                <Col sm={12} md={6} lg={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                    <div className='skill'>
-                        <img src={tick} alt="Proficient in " className='tick'/>
-                        <h4 style={{display: 'inline-block', fontWeight: '300', margin: '0 10px'}}>Software Engineering</h4>
-                    </div>
-                </Col>
-                <Col sm={12} md={6} lg={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                    <div className='skill'>
-                        <img src={tick} alt="Proficient in " className='tick'/>
-                        <h4 style={{display: 'inline-block', fontWeight: '300', margin: '0 10px'}}>DevOps</h4>
-                    </div>
-                </Col>
-            </Row>
+    return (
+        <Container fluid id="skills" style={{ padding: "20px", height: "90vh" }}>
+            <div style={{ paddingTop: "5%" }}>
+                <p className="fs-1 text-center"><b>Skills</b></p>
+            </div>
+            <div style={{ paddingLeft: "20%", paddingRight: "20%" }}>
+                <Row>
+                    <Col sm={12} md={6} lg={6}>
+                        <center>
+                            <SkillCard>Quantum Computing</SkillCard>
+                        </center>
+                    </Col>
+                    <Col sm={12} md={6} lg={6}>
+                        <center>
+                            <SkillCard>Web Development</SkillCard>
+                        </center>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col sm={12} md={6} lg={6}>
+                        <center>
+                            <SkillCard>Data Science</SkillCard>
+                        </center>
+                    </Col>
+                    <Col sm={12} md={6} lg={6}>
+                        <center>
+                            <SkillCard>Machine Learning</SkillCard>
+                        </center>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col sm={12} md={6} lg={6}>
+                        <center>
+                            <SkillCard>Software Engineering</SkillCard>
+                        </center>
+                    </Col>
+                    <Col sm={12} md={6} lg={6}>
+                        <center>
+                            <SkillCard>DevOps</SkillCard>
+                        </center>
+                    </Col>
+                </Row>
+            </div>
         </Container>
     );
 };

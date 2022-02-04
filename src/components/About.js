@@ -10,8 +10,8 @@ export default function About() {
             <div style={{ padding: "5%" }}>
                 <p className="fs-1 text-center"><b>About Me</b></p>
             </div>
-            <Row>
-                <Col sm={12} md={5} lg={6}>
+            <Row style={{ paddingTop: "2.5%" }}>
+                <Col sm={12} md={5} lg={6}  style={{ paddingTop: "5%" }}>
 
                     <img
                         src={dev}
@@ -19,7 +19,7 @@ export default function About() {
                         width="100%"
                     ></img>
                 </Col>
-                <Col sm={12} lg={6}>
+                <Col sm={12} lg={6} style={{ paddingTop: "5%" }}>
                     <center>
                         <ReactRoundedImage image={myIcon} />
                     </center>
