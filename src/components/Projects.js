@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
-import tick from '../img/ticks.png';
 
 const Card1 = (props) => {
     return (
