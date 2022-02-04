@@ -4,7 +4,7 @@ import dev from "./dev.png";
 
 export default function About() {
     return (
-        <Container>
+        <Container id="about">
             <h1 style={{ width: "100", textAlign: "center" }}>About me</h1>
             <Row>
                 <Col sm={6} md={5} lg={{ span: 4, offset: 1 }}>
