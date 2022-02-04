@@ -2,16 +2,15 @@ import React from 'react';
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import tick from '../img/ticks.png';
 
-const Card1 = () => {
+const Card1 = (props) => {
     return (
         <Card style={{ width: '100%' }}>
             <Card.Body>
-                <Card.Title>Project 1</Card.Title>
+                <Card.Title>{props.children}</Card.Title>
                 <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
+                    This is a demo project for this portfolio. 
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Button variant="primary">Visit my work!</Button>
             </Card.Body>
         </Card>
     );
@@ -26,32 +25,37 @@ const Projects = () => {
             <Row style={{ justifyContent: "center", alignItems: "center", paddingTop: "10px" }}>
                 <Col sm={12} md={6} lg={4}>
                     <div style={{ padding: "2.5%" }}>
-                        <Card1 />
+                        <Card1>
+                            Project 1
+                        </Card1>
                     </div>
                 </Col>
                 <Col sm={12} md={6} lg={4}>
                     <div style={{ padding: "2.5%" }}>
-                        <Card1 />
+                        <Card1>
+                            Project 2
+                        </Card1>
                     </div>
                 </Col>
                 <Col sm={12} md={6} lg={4}>
                     <div style={{ padding: "2.5%" }}>
-                        <Card1 />
+                        <Card1>
+                            Project 3
+                        </Card1>
                     </div>
                 </Col>
                 <Col sm={12} md={6} lg={4}>
                     <div style={{ padding: "2.5%" }}>
-                        <Card1 />
+                        <Card1>
+                            Project 4
+                        </Card1>
                     </div>
                 </Col>
                 <Col sm={12} md={6} lg={4}>
                     <div style={{ padding: "2.5%" }}>
-                        <Card1 />
-                    </div>
-                </Col>
-                <Col sm={12} md={6} lg={4}>
-                    <div style={{ padding: "2.5%" }}>
-                        <Card1 />
+                        <Card1>
+                            Project 5
+                        </Card1>
                     </div>
                 </Col>
             </Row>
