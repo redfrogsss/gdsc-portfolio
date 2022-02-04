@@ -7,7 +7,7 @@ import myIcon from "../img/icon.jpeg";
 export default function About() {
     return (
         <Container id="about" style={{ height: "90vh" }}>
-            <div style={{ padding: "10vh" }}>
+            <div style={{ padding: "5%" }}>
                 <p className="fs-1 text-center"><b>About Me</b></p>
             </div>
             <Row>
