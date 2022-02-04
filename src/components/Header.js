@@ -13,7 +13,7 @@ const Header = () => {
                         <Nav.Link href="#projects">Project</Nav.Link>
                         <Nav.Link href="#skills">Skills</Nav.Link>
                     </Nav>
-                    <Button variant="outline-success">Contact Me</Button>
+                    <Button variant="outline-success" href="#contact">Contact Me</Button>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
