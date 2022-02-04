@@ -6,11 +6,13 @@ import myIcon from "../img/icon.jpeg";
 
 export default function About() {
     return (
-        <Container id="about">
-            {/* <h1 style={{ width: "100", textAlign: "center" }}>About me</h1> */}
-            <p className="fs-1 text-center">About Me</p>
+        <Container id="about" style={{ height: "90vh" }}>
+            <div style={{ padding: "10vh" }}>
+                <p className="fs-1 text-center"><b>About Me</b></p>
+            </div>
             <Row>
                 <Col sm={12} md={5} lg={6}>
+
                     <img
                         src={dev}
                         alt="Developer"
